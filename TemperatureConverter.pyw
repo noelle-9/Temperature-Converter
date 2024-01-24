@@ -285,11 +285,6 @@ def converting():
             # ------------------------------------------------------------------------------------------------------------------------------------
 
 
-# ------------------------------------------------------------------------------------------------------------------------------------
-# secret secret shhh button
-def secret_click():
-    messagebox.showinfo("Secret Message", "This was a great class.\nI'm really glad to have you as my first sem prog prof, I may have dropped out if I hadn't. \nThat's a different story though that I wont get into.\nThank you, I really enjoyed having the freedom to goof in these assignment ^^")
-
 
 # ------------------------------------------------------------------------------------------------------------------------------------
 # Allows the user to user to use [Enter] instead of pressing the Convert button and allows the user to use [ESC] to reset everything to default
@@ -359,7 +354,6 @@ convert_label = Label(mid_frame, font="Onyx 25", text="                    To", 
 # Button
 convert_button = Button(mid_frame, text="Convert", width=15, command=converting)
 clear_button = Button(mid_frame, text="Clear", command=clear_click)
-secret_button = Button(mid_frame, text="Shh", command=secret_click, width=4)
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------
@@ -389,14 +383,9 @@ convert_label.pack(anchor=CENTER)
 convert_combobox.pack(anchor=CENTER)
 convert_button.pack(side="left")
 clear_button.pack(side="right")
-secret_button.pack()
 
 
 
 # Make the window visible
 window.mainloop()
 
-
-# bye byeee (^^ )/
-# I wasted so much time trying to figure this one out haha
-# I unfortunately don't have you next semester :( so considering this was the last lab, I had to do something a little extra.
